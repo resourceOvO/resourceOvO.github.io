@@ -303,7 +303,6 @@ div#archive {
   background: var(--trans-dark);
 }
 
-
 /* 夜间模式页脚页头遮罩透明 */
 [data-theme="dark"] #footer::before {
   background: transparent !important;
