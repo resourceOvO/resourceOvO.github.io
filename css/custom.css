@@ -347,3 +347,39 @@ svg.social_icon {
   overflow: hidden;
 }
 
+/* 关于页面小标题空心圈 */
+#page h3 {
+  position: relative;
+  padding-left: 16px;
+}
+
+#page h3::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  border: 3px solid var(--anzhiyu-hovertext, #ff7242);
+  border-radius: 8px;
+  background: var(--card-bg);
+  transform: translateY(-50%);
+  transition: border-color .2s ease-in-out;
+}
+
+#page h3:hover::before {
+  border-color: var(--anzhiyu-light-blue, #4dc9f3);
+}
+
+[data-theme="dark"] #page h3::before {
+  border-color: #ff7242;
+}
+
+/* 关于页面建设日志列表 */
+#page ol {
+  padding-left: 80px;
+}
+
+#page ol li::marker {
+  font-weight: bold;
+}
